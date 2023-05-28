@@ -1,0 +1,8 @@
+mysql 
+
+root password: dummypassword
+user: todos-user
+userpassword: dummytodos
+default Schema: todos
+
+docker run --hostname=637d1f658e53 --mac-address=02:42:ac:11:00:02 --env=MYSQL_ROOT_PASSWORD=dummypassword --env=MYSQL_USER=todos-user --env=MYSQL_PASSWORD=dummytodos --env=MYSQL_DATABASE=todos --env=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin --env=GOSU_VERSION=1.16 --env=MYSQL_MAJOR=8.0 --env=MYSQL_VERSION=8.0.32-1.el8 --env=MYSQL_SHELL_VERSION=8.0.32-1.el8 --volume=/var/lib/mysql -p 3306:3306 --restart=no --runtime=runc -d mysql:8-oracle
